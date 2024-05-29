@@ -1,0 +1,73 @@
+:root {
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-rabsperry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-carcoal: hsl(24, 5%, 18%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em
+}
+
+img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+.preparation {
+    padding-inline: 2em;
+    padding-block: 1em;
+    background-color: var(--rose-white);
+    margin-block: 2em;
+}
+
+li {
+    margin-block-end: 1em;
+    margin-inline-start: -1em;
+}
+
+h2, h3 {
+    color: var(--dark-rabsperry)
+}
+
+::marker {
+    color: var(--nutmeg);
+    font-weight: bold;
+}
+
+.step {
+    font-weight: bold;
+}
+
+.two-column {
+    column-count: 2;
+}
+
+.two-column li {
+    border-bottom: 1px solid hsla(0, 0%, 0%, 0.3);
+}
+
+.two-column li::marker {
+    content: "";
+}
+
+.nutmeg {
+    color: var(--nutmeg);
+    font-weight: bold;
+}
+
+hr {
+    opacity: 0.3;
+}

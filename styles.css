@@ -18,7 +18,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2em
+    background-color: var(--eggshell);
+    font-family: "Outfit", sans-serif;
+    padding: 5em;
+    
 }
 
 img {
@@ -26,11 +29,17 @@ img {
     border-radius: 1em;
 }
 
+h1 {
+    font-family: "Young serif", sans-serif;
+    font-weight: lighter;
+}
+
 .preparation {
     padding-inline: 2em;
     padding-block: 1em;
     background-color: var(--rose-white);
     margin-block: 2em;
+    border-radius: 1em;
 }
 
 li {
@@ -59,6 +68,10 @@ h2, h3 {
     border-bottom: 1px solid hsla(0, 0%, 0%, 0.3);
 }
 
+.two-column li:last-child, .two-column li:nth-child(4){
+    border-bottom: 0px;
+}
+
 .two-column li::marker {
     content: "";
 }
@@ -70,4 +83,11 @@ h2, h3 {
 
 hr {
     opacity: 0.3;
+}
+
+.container {
+    width: 38vi;
+    padding: 2em;
+    background-color: var(--white);
+    border-radius: 1em;
 }
